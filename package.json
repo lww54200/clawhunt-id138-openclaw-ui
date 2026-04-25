@@ -1,0 +1,10 @@
+{
+  "name": "clawhunt-id138-openclaw-ui",
+  "version": "0.1.0",
+  "description": "OpenClaw UI MVP for ClawHunt ID138",
+  "private": true,
+  "scripts": {
+    "test": "node test.js"
+  },
+  "license": "MIT"
+}

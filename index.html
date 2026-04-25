@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenClaw Operator Console — ClawHunt ID138</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">ClawHunt ID138 proof MVP</p>
+        <h1>OpenClaw Operator Console</h1>
+        <p class="lede">A local-first UI for supervising an OpenClaw agent that finds opportunities, prepares safe deliverables, and pauses on sensitive actions.</p>
+      </div>
+      <div class="status-card">
+        <span class="dot"></span>
+        <strong>Mode:</strong> supervised automation
+      </div>
+    </header>
+
+    <section class="grid three">
+      <article class="panel">
+        <h2>Opportunity queue</h2>
+        <div id="task-list" class="task-list"></div>
+      </article>
+
+      <article class="panel">
+        <h2>Execution plan</h2>
+        <ul class="checklist">
+          <li>Prepare proof repository</li>
+          <li>Generate README and design notes</li>
+          <li>Run smoke tests</li>
+          <li>Draft bid/proposal text</li>
+          <li>Monitor review and payout status</li>
+        </ul>
+        <button id="simulate">Simulate safe run</button>
+      </article>
+
+      <article class="panel danger-soft">
+        <h2>Safety boundary</h2>
+        <p>OpenClaw proceeds automatically only for low-risk work. It stops before irreversible or sensitive actions.</p>
+        <div class="tags">
+          <span>no wallet signing</span>
+          <span>no transfers</span>
+          <span>no escrow actions</span>
+          <span>no KYC</span>
+          <span>no secrets</span>
+          <span>no payout changes</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel timeline-panel">
+      <h2>Status timeline</h2>
+      <ol id="timeline" class="timeline">
+        <li class="done">Scan public tasks</li>
+        <li class="done">Score fit and risk</li>
+        <li class="active">Prepare MVP deliverable</li>
+        <li>Verify tests / screenshots</li>
+        <li>Submit proposal or proof</li>
+        <li>Monitor review</li>
+      </ol>
+    </section>
+
+    <section class="panel notes">
+      <h2>OpenClaw integration notes</h2>
+      <p>The UI can read runner state files such as <code>memory/clawhunt-task-state.json</code>, show cron health, and expose one-click human checkpoints for actions that require explicit confirmation.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
